@@ -59,4 +59,12 @@
         Welcome to the last page of this app.\n\n
         Now you can navigate to the first page again..
     </string>
+
+    <string name="longPress">
+        Long press is Done!!!
+    </string>
+
+    <string name="topText">
+        Text on Top
+    </string>
 </resources>
