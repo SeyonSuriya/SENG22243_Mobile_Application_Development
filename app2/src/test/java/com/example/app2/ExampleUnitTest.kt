@@ -1,8 +1,8 @@
 package com.example.app2
 
+import com.example.app2.services.Calculate
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -13,5 +13,19 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
+    }
+
+    @Test
+    fun it_should_add_2_and_2_and_return_4() {
+        var calc = Calculate()
+        var result = calc.add(2,2)
+        assertEquals(4,result)
+    }
+
+    @Test
+    fun it_should_add_minus2_and_2_and_result_0() {
+        var calc = Calculate()
+        var result = calc.add(-2,2)
+        assertEquals(0,result)
     }
 }
