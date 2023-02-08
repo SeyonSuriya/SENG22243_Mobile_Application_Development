@@ -29,6 +29,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TwoGreeting(){
     var number1 by rememberSaveable(stateSaver = TextFieldValue.Saver) {
@@ -43,7 +44,7 @@ fun TwoGreeting(){
         mutableStateOf(0)
     }
 
-    var cal = Calculate()
+    val cal = Calculate()
 
     Surface(
         modifier = Modifier.fillMaxSize(),

@@ -60,6 +60,11 @@ fun EchoDetail() {
         mutableStateOf("")
     }
 
+    var clickedEcho: Boolean by remember {
+        mutableStateOf(false)
+    }
+    val echologic = EchoLogic()
+
     //val NAME : MutableLiveData<String> by lazy { MutableLiveData<String>(TextFieldValue("", TextRange(0,7)).toString()) }
 
     Surface(
@@ -83,16 +88,11 @@ fun EchoDetail() {
             )
             Text("")
 
-            //echo the name and age only if both details are provided
-            if (tempName.isNotEmpty() && tempAge.isNotEmpty()) {
-                Text(
-                    text = "Hello, $tempName!, you are $tempAge years old.",
-                    style = MaterialTheme.typography.headlineSmall
-                )
-            }
+            echologic.displayText(name = tempName, age = tempAge, clicked_echo = clickedEcho)
 
             Text("")
             Button(onClick = {
+                clickedEcho = true
                 tempName = name.text
                 tempAge = age.text
 //                Log.d("echoDetail",tempName)
