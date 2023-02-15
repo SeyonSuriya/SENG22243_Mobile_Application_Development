@@ -59,4 +59,16 @@
         Welcome to the last page of this app.\n\n
         Now you can navigate to the first page again..
     </string>
+
+    <string name="longPress">
+        Long press is Done!!!
+    </string>
+
+    <string name="topText">
+        Text on Top
+    </string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

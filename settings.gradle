@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "seng22243"
 include ':app'
+include ':app2'
+include ':app3'
