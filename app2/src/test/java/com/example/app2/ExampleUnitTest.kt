@@ -17,15 +17,15 @@ class ExampleUnitTest {
 
     @Test
     fun it_should_add_2_and_2_and_return_4() {
-        var calc = Calculate()
-        var result = calc.add(2,2)
+        val calc = Calculate()
+        val result = calc.add(2,2)
         assertEquals(4,result)
     }
 
     @Test
     fun it_should_add_minus2_and_2_and_result_0() {
-        var calc = Calculate()
-        var result = calc.add(-2,2)
+        val calc = Calculate()
+        val result = calc.add(-2,2)
         assertEquals(0,result)
     }
 }

@@ -78,20 +78,20 @@ fun TwoGreeting(){
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name! Welcome")
-}
+//@Composable
+//fun Greeting(name: String) {
+//    Text(text = "Hello $name! Welcome")
+//}
 
-@Composable
-//try to make this function returns integer value
-fun OutlinedNumberTextField(label: String, _text: TextFieldValue) {
-//    var text by rememberSaveable(stateSaver = TextFieldValue.Saver) {
-//        mutableStateOf(TextFieldValue("", TextRange(0, 7))) }
-    var text = _text
-
-
-}
+//@Composable
+////try to make this function returns integer value
+//fun OutlinedNumberTextField(label: String, _text: TextFieldValue) {
+////    var text by rememberSaveable(stateSaver = TextFieldValue.Saver) {
+////        mutableStateOf(TextFieldValue("", TextRange(0, 7))) }
+//    var text = _text
+//
+//
+//}
 
 @Preview(showBackground = true)
 @Composable

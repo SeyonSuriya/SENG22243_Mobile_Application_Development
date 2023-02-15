@@ -53,17 +53,12 @@ fun EchoDetail() {
         mutableStateOf(TextFieldValue("",TextRange(0,7)))
     }
 
-    var tempName by remember {
-        mutableStateOf("")
-    }
-    var tempAge by remember {
-        mutableStateOf("")
-    }
+    var tempName by remember { mutableStateOf("") }
+    var tempAge by remember { mutableStateOf("") }
 
-    var clickedEcho: Boolean by remember {
-        mutableStateOf(false)
-    }
+    var clickedEcho: Boolean by remember { mutableStateOf(false) }
     val echologic = EchoLogic()
+
 
     //val NAME : MutableLiveData<String> by lazy { MutableLiveData<String>(TextFieldValue("", TextRange(0,7)).toString()) }
 
