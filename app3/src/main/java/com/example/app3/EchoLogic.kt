@@ -26,7 +26,7 @@ class EchoLogic {
             )
         } else if (name.isEmpty() && age.isEmpty() && clicked_echo) {
             Text(
-                text = "Please enter you details.",
+                text = "Please enter your details.",
                 style = typography.bodyMedium
             )
         }
